@@ -3,8 +3,8 @@
 
 @author: matthassel
 '''
-import yahooStockQuote.yahooStockQuote as yql
-import string2matrix.string2matrix as str2mat
+import YahooStockQuote as yql
+import StringToMatrix as str2mat
 import daemon
 #from daemon import runner
 from threading import Thread
