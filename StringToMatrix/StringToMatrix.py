@@ -117,3 +117,10 @@ class LED_TICKER():
     def main(self):
         self.scrolling_ticker_text()
         self.update_ticker_w_buffer()
+
+if __name__ == '__main__':
+    color = "yellow"
+    app_text = Text2LED()
+    app_ticker = LED_TICKER()
+    app_ticker.ticker = app_ticker.ticker + app_text.add_to_ticker("Hello World", color)
+    app_ticker.main()
