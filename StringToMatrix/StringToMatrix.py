@@ -122,5 +122,8 @@ if __name__ == '__main__':
     color = "yellow"
     app_text = Text2LED()
     app_ticker = LED_TICKER()
-    app_ticker.ticker = app_ticker.ticker + app_text.add_to_ticker("Hello World", color)
+    app_ticker.ticker = app_ticker.ticker + app_text.add_to_ticker("It has been ", color) + \
+                                            app_text.add_to_ticker("0", "red") + \
+                                            app_text.add_to_ticker(" days since Murphy has had an accident!!", "yellow") + \
+                                            app_text.add_to_ticker("                 ", "yellow")
     app_ticker.main()
