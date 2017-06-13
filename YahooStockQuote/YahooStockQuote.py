@@ -44,5 +44,5 @@ class StockQuote():
 if __name__ == '__main__':
     pp = pprint.PrettyPrinter(indent=4)
     app = StockQuote()
-    app.symbol = 'AMD'
+    app.symbol = 'AAPL'
     pp.pprint(app.quote())
